@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+</head>
+<style type="text/css">
+body{
+	zoom:1.2;
+}
+	input{
+		display: block;
+	}
+	thead,tfoot{
+		text-align: center;
+		background-color: #1d7a41;
+		color: white;
+		padding: 10px;
+		border:5px solid black;
+	}
+	div{
+		padding: 8px;
+		background-color: #dfd6ff;
+		margin-right: auto;
+		margin-left: auto;
+		border:1px solid black;
+	}
+	#login,#sign{
+		position:absolute;
+		border: 2px solid black;
+		border-radius: 3px;
+		box-shadow: 5px ;
+		width: 400px;
+		margin: 5% 20% 20%;
+	}
+	form{
+		padding-top: 8px;
+		border: 3px solid #023863;
+	}
+	td{
+		font-size: 20px;
+		padding: 10px;
+	}
+	input{
+		font-size: 18px;
+	}
+	table{
+		width: 400px;
+		padding: 10px;
+	}
+	#btn{
+		margin-left: 30%;
+	}
+	#btn,#btn1{
+		margin-bottom: 10px;
+	}
+	span{
+		border: 1px solid black;
+
+	}
+	</style>
+
+<body>
+	
+		
+		
+
+		<div id="login">
+			<input type="button" name="" id="btn" value="SIGNUP" onclick="change(0)" style="display: inline;">
+			<input type="button" name="" id="btn1" value="LOGIN" onclick="change(1)" style="display: inline;">
+			<form class="login" method="post" action="./login.php">
+				<table>
+					<thead >
+						<td colspan="2">LOGIN</td>
+					</thead>
+					<tr>
+						<td>USERNAME</td>
+						<td><input type="text" name="uid" id="uid" required="required"></td>
+					</tr>
+					<tr>
+						<td>PASSWORD</td>
+						<td><input type="password" name="upw" id="upw" required="required"></td>
+					</tr>
+					<tfoot>
+						<td colspan="2"><input type="submit" name="" value="LOGIN" style="margin-right: auto;margin-left: auto;"></td>
+					</tfoot>
+				</table>
+						
+			</form>
+		</div>
+	
+		<div id="sign">
+			<input type="button" name="" id="btn" value="SIGNUP" onclick="change(0)" style="display: inline;">
+			<input type="button" name="" id="btn1" value="LOGIN" onclick="change(1)" style="display: inline;">
+			<form class="sign" method="post" action="#">
+				<table>
+					<thead >
+						<td colspan="2">SIGN UP</td>
+					</thead>
+					<tr>
+						<td>USERNAME</td>
+						<td><input type="text" name="rid" id="rid" required="required"></td>
+					</tr>
+					<tr>
+						<td>PASSWORD</td>
+						<td><input type="password" name="rpw" id="rpw" required="required"></td>
+					</tr>
+					<tr>
+						<td> CONFIRM PASSWORD</td>
+						<td><input type="password" name="cpw" id="cpw" required="required"></td>
+					</tr>
+					<tfoot>
+						<td colspan="2"><input type="submit" name="" value="SIGN UP" style="margin-right: auto;margin-left: auto;"></td>
+					</tfoot>
+				</table>
+			</form>
+		</div>
+	</span>
+	
+<script type="text/javascript">
+	change(1);
+	function change(v)
+	{
+		document.getElementById("login").style.display="none";
+		document.getElementById("sign").style.display="none";
+		if(v==1)
+			document.getElementById("login").style.display="block";
+		else
+			document.getElementById("sign").style.display="block";
+
+	}
+</script>
+</body>
+</html>
